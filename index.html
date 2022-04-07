@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
+    <title>Music Player | HTML, CSS, JS</title>
+</head>
+<body>
+<audio id="audio" src=""></audio>
+<div class="top">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_FJ5JPKeA7aIJ8PZcrQUAYOFxGFausNFNQ&usqp=CAU">
+</div>
+<small id="fileName"></small>
+<input type="range" id="length" min="0" value="0" max="0">
+<small id="current"></small>
+<small id="duration"></small>
+<br>
+<div class="row" style="opacity: 0">
+    <div class="col col3 col2"></div>
+    <div class="col col1"></div>
+    <div class="col2 col"></div>
+    <div class="col"></div>
+    <div class="col2 col"></div>
+    <div class="col col1"></div>
+    <div class="col col3 col2"></div>
+  </div>
+<br>
+<div class="bottom">
+   <div class="container1">
+      <button class="previous-btn">
+        <i onclick="previous()" class="previous fas fa-angle-double-left"></i> 
+      </button>
+      <span class="play-pause-btn">
+         <i onclick="playPauseAudio()" id="btn" class="fas fa-play"></i>
+      </span>
+      <button class="next-btn">
+         <i onclick="next()" class="next fas fa-angle-double-right"></i>
+      </button>
+   </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
